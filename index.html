@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang=ru dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Справочник фармацевта</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet">  </head>
+  <body>
+    <div class="left">
+<div class="sidebar">
+<div class="wrapper">
+<div class="items">
+  <a href="#a"><img src="https://i.ibb.co/L8D5T60/light.png">Расчет рецептурных номеров</a>
+  <a href="#b"><img src="https://i.ibb.co/zmDbMVZ/diamond.png">Расчет объема сусп. амоксициллина</a>
+  <a href="#c"><img src="https://i.ibb.co/W5QZ9Fk/envelope.png">НЕР</a>
+  <a href="#d"><img src="https://i.ibb.co/CnKDBxC/flask.png">НД</a>
+</div>
+</div>
+</div>
+</div>
+    <article>
+     <section id="a">
+     <div id="prescription" class="card prescription-number">
+         <h2>расчет <span>рецептурных номеров</span></h2>
+         <form class="prescription-form" method="post">
+         <label for="recipe-number" class="add-number-label"><h3>Введите <span>количество порошков</span>:</h3></label>
+         <input id="recipe-number" class="form-input" type="text" placeholder="Количество порошков..." required>
+         <button class="recipe-submit" type="submit">Узнать</button>
+       </form>
+     </div>
+     <div id="ab" class="card ab-dose-block">
+     <form class="ab-dose" method="post" oninput="doseoutput.value=doserange.value">
+     <p>Рассчет объема суспензии амоксициллина:</p>
+     <div class="weight-block">
+           <label for="weight">Введите вес ребенка:</label>
+           <input class="form-input" type="number" min="5" max="40" id="weight" name="weight" value="15">
+         </div>
+     <label>Выберите дозировку суспензии:</label>
+     <select class="dose-amount form-input">
+       <option value="125">125мг/5мл</option>
+       <option value="200">200мг/5мл</option>
+       <option value="250">250мг/5мл</option>
+       <option value="400">400мг/5мл</option>
+     </select>
+     <label>Выберите дозировку суспензии на кг: (при весе ребенка менее 40 кг)</label>
+     <label for="doserange">Количество дней</label><br>
+        40 <input type="range" id="doserange" name="doserange" min="40" max="90" step="10"> 90
+
+      <div class="output-area">
+        <output name="doseoutput"></output>
+      </div>
+      <button class="calcdose" type="submit">Узнать</button>
+      </form>
+      </div>
+     </section>
+     <section id="b">
+     <h2>B</h2>
+
+     </section>
+     <section id="c">
+     <h2>C</h2>
+     </section>
+     <section id="d">
+     <h2>D</h2>
+     </section>
+  </article>
+
+ <script type="text/javascript">
+ var zTop = 1;
+ $('a').on('click',function(e){
+  e.preventDefault();
+  var index = $($(this).attr('href')).index();
+  var wh = $(window).height();
+  $('section').each(function(){
+  var $tgt = $(this);
+  var idx = $tgt.index();
+  $tgt.removeClass();
+  if(index == idx){ $tgt.stop(true,true).animate({top:0},'linear').addClass('active').css({'z-index':zTop}); }
+  if(index < idx) { $tgt.stop(true,true).animate({top:wh},'linear').addClass('below'); }
+  if(index > idx ){ $tgt.stop(true,true).animate({top:-wh},'linear').addClass('above'); }
+  });
+  zTop++;
+ })
+
+ // Trigger first section animation
+ $('a[href="#a"]').trigger('click');
+
+ // Set height
+ $(window).on('resize',function(){
+  var wh = $(window).height();
+  $('article, section').height(wh);
+  $('.active').css({top:0});
+  $('.above').css({top:-wh});
+  $('.below').css({top:wh});
+ }).trigger('resize');
+ </script>
+    <script src="script.js"></script>
+</html>
