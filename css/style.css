@@ -294,7 +294,7 @@ cursor: pointer;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: white;
+  background: #34d0c4;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
@@ -307,12 +307,12 @@ cursor: pointer;
   height: 20px;
   border: 0;
   border-radius: 50%;
-  background: white;
+  background: #34d0c4;
   cursor: pointer;
   transition: background 0.15s ease-in-out;
 }
 #slider::-moz-range-thumb:hover {
-  background: #d4d4d4;
+  background: #34d0c4;
 }
 .field-title {
     position: absolute;

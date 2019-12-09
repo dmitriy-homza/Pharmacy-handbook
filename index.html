@@ -47,19 +47,14 @@
        <option value="250">250мг/5мл</option>
        <option value="400">400мг/5мл</option>
      </select>
-     <label>Выберите дозировку суспензии на кг: (при весе ребенка менее 40 кг)</label>
-     <label for="doserange">Количество дней</label><br>
-        40 <input type="range" style="background: linear-gradient(90deg, rgb(11, 30, 223) 42.8571%, rgba(255, 255, 255, 0.216) 42.9571%);" id="doserange" name="doserange" min="40" max="90" step="10"> 90
-      <div class="output-area">
-        <output name="doseoutput"></output>
-      </div>
+     <div class="length range__slider" data-min="20" data-max="90">
+ <div class="length__title field-title" data-length="10">Дозировка на кг:</div>
+ <input id="slider" type="range" min="20" max="90" value="40" step="10" style="background: linear-gradient(90deg, rgb(11, 30, 223) 21.4286%, rgba(255, 255, 255, 0.216) 21.5286%);">
+ </div>
+     </div>
       <button class="calcdose" type="submit">Узнать</button>
       </form>
-      <div class="length range__slider" data-min="20" data-max="90">
-  <div class="length__title field-title" data-length="10">Дозировка на кг:</div>
-  <input id="slider" type="range" min="20" max="90" value="40" step="10" style="background: linear-gradient(90deg, rgb(11, 30, 223) 21.4286%, rgba(255, 255, 255, 0.216) 21.5286%);">
-  </div>
-      </div>
+
      </section>
      <section id="b">
      <h2>B</h2>
