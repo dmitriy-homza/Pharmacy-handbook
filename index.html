@@ -26,16 +26,16 @@
     <article>
      <section id="a">
      <div id="prescription" class="card prescription-number">
-         <h2>расчет <span>рецептурных номеров</span></h2>
+         <h2>расчет <span>рецептурных номеров</span>:</h2>
          <form class="prescription-form" method="post">
          <label for="recipe-number" class="add-number-label"><h3>Введите <span>количество порошков</span>:</h3></label>
          <input id="recipe-number" class="form-input" type="text" placeholder="Количество порошков..." required>
          <button class="recipe-submit" type="submit">Узнать</button>
        </form>
      </div>
-     <div id="ab" class="card ab-dose-block">
-     <form class="ab-dose" method="post" oninput="doseoutput.value=doserange.value">
-     <p>Рассчет объема суспензии амоксициллина:</p>
+     <div id="ab" class="card ab-dose">
+     <form class="" method="post" oninput="doseoutput.value=doserange.value">
+     <h2>Рассчет объема <span>суспензии амоксициллина</span>:</h2>
      <div class="weight-block">
            <label for="weight">Введите вес ребенка:</label>
            <input class="form-input" type="number" min="5" max="40" id="weight" name="weight" value="15">
@@ -49,13 +49,16 @@
      </select>
      <label>Выберите дозировку суспензии на кг: (при весе ребенка менее 40 кг)</label>
      <label for="doserange">Количество дней</label><br>
-        40 <input type="range" id="doserange" name="doserange" min="40" max="90" step="10"> 90
-
+        40 <input type="range" style="background: linear-gradient(90deg, rgb(11, 30, 223) 42.8571%, rgba(255, 255, 255, 0.216) 42.9571%);" id="doserange" name="doserange" min="40" max="90" step="10"> 90
       <div class="output-area">
         <output name="doseoutput"></output>
       </div>
       <button class="calcdose" type="submit">Узнать</button>
       </form>
+      <div class="length range__slider" data-min="20" data-max="90">
+  <div class="length__title field-title" data-length="10">Дозировка на кг:</div>
+  <input id="slider" type="range" min="20" max="90" value="40" step="10" style="background: linear-gradient(90deg, rgb(11, 30, 223) 21.4286%, rgba(255, 255, 255, 0.216) 21.5286%);">
+  </div>
       </div>
      </section>
      <section id="b">
