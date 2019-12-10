@@ -90,6 +90,9 @@ article section {
 
 #a {
  background: #f2f3f7;
+ display: flex;
+ flex-wrap: wrap;
+ align-content: flex-start;
 }
 
 #b {
@@ -197,14 +200,16 @@ padding-right: 10px;
 }
 
 .card {
+  width: 540px;
   background-color: white;
     border-radius: 4px;
     margin-top: 8px;
     margin-bottom: 5px;
     padding: 25px 25px 15px 25px;
     transition: 0.3s;
-    height: 40%;
+    height: 45%;
     margin-left: 3%;
+    height: 340px;
 }
 .card:hover {
   box-shadow: 5px 1px 20px 1px #ddd;
@@ -214,11 +219,12 @@ padding-right: 10px;
 .prescription-number {
   width: 40%;
   margin-top: 2%;
-
+  height: 258px;
+  min-width: 446px;
 }
 
 .ab-dose {
-  width: 50%;
+
 }
 
 .ab-dose form {
@@ -253,7 +259,7 @@ cursor: pointer;
   align-items: center;
   background: rgba(214, 214, 214, 0.08);
   border-radius: 8px;
-  margin: 30px 0;
+  margin: 30px 0 0px 0;
 }
 .range__slider::before, .range__slider::after {
   position: absolute;
@@ -315,7 +321,7 @@ cursor: pointer;
 .field-title {
     position: absolute;
     top: -10px;
-    left: 8px;
+    left: 2px;
     transform: translateY(-50%);
     font-weight: 800;
     pointer-events: none;
@@ -329,14 +335,40 @@ label, .length__title, .field-title {
   font-weight: 300;
 }
 
-form div {
+
+form > div {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 10px;
-  width: 45%;
+  width: 60%;
+}
+
+form div:first-of-type {
+  width: 35%;
 }
 
 form div:nth-of-type(2) {
   margin-left: 5%;
+}
+
+.recipe-submit:last-of-type {
+  padding: 5px;
+}
+
+.card:last-of-type {
+  height: 327px;
+}
+
+.recipe-description {
+  margin: 2%;
+  height: 258px;
+}
+
+.ab-description {
+  margin-left: 2%;
+}
+
+.advise {
+  color: #34d0c4;
 }

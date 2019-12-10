@@ -1,12 +1,12 @@
 var form = document.querySelector('.prescription-form');
 var pulvNumber = document.querySelector('#recipe-number');
-var message = document.querySelector('.prescription-form');
+var message = document.querySelector('.recipe-description');
 var number = 0;
 //функция расчета номеров
 var prescriptionNumber = function(pulvNumber) {
 
 
-  var advise = document.createElement('p');
+  var advise = document.createElement('h3');
   //добавляем класс для удаления повторяющихся элементов
   advise.classList.add('advise');
 
@@ -15,7 +15,7 @@ var prescriptionNumber = function(pulvNumber) {
 
   }
   else if (pulvNumber>20 ) {
-    number = 1+Math.ceil((pulvNumber-20)/10)*0.5;
+    number = 1+Math.ceil((pulvNumber-20)/20)*0.5;
   }
   else if (pulvNumber<=0 ) {
     number = -1;
@@ -63,10 +63,10 @@ let medicineDose = document.querySelector('.dose-amount');
 let weight = document.querySelector('#weight');
 let dose = document.querySelector('#slider');
 let volume = 0;
-let doseBlock = document.querySelector('.ab-dose');
+let doseBlock = document.querySelector('.ab-description');
 
 let getVolume = function (weight, medicineDose, dose) {
-  let advise = document.createElement('p');
+  let advise = document.createElement('h3');
   advise.classList.add('advise');
   volume = weight*dose/medicineDose/3*5;
   volume = volume.toFixed(1)

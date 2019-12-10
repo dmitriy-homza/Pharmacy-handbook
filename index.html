@@ -33,8 +33,12 @@
          <button class="recipe-submit" type="submit">Узнать</button>
        </form>
      </div>
+     <div class="card recipe-description">
+       <h3>За <span>первые 20</span> и менее порошков начисляется <span>1 рецептурный номер</span>. <br><br>За каждые <span>последующие 20 и менее</span> порошков - <span>0.5 рецептурного номера</span>.</h3>
+
+     </div>
      <div id="ab" class="card ab-dose">
-     <form class="" method="post" oninput="doseoutput.value=doserange.value">
+     <form class="" method="post">
      <h2>Рассчет объема <span>суспензии амоксициллина</span>:</h2>
      <div class="weight-block">
            <label for="weight">Введите вес ребенка:</label>
@@ -53,12 +57,14 @@
  <input id="slider" type="range" min="20" max="90" value="40" step="10" style="background: linear-gradient(90deg, rgb(11, 30, 223) 21.4286%, rgba(255, 255, 255, 0.216) 21.5286%);">
  </div>
        <button class="calcdose recipe-submit" type="submit">Узнать</button>
-</div>
 </form>
+</div>
+<div class="card ab-description">
+<h3><span>Для детей с массой тела менее 40 кг.</span><br><br>Острый синусит, острый средний отит, внебольничная пневмония, острый цистит: <span>доза 20-90 мг/кг</span><br><br>Острый стрептококковый тонзиллит: <span>доза 40-90 мг/кг</span></h3>
+</div>
 
      </section>
      <section id="b">
-     <h2>B</h2>
 
      </section>
      <section id="c">
