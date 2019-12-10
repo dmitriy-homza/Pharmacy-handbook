@@ -36,9 +36,9 @@ font-family: "Source Sans Pro", sans-serif;
   border: 1px solid #ced6e0;
   transition: all 0.3s ease-in-out;
   font-size: 18px;
-  padding: 5px 15px;
+  padding: 0px 10px;
   background: none;
-  margin-top: 12px;
+  margin-top: 2px;
   color: #1a3b5d !important;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -62,7 +62,7 @@ font-family: "Source Sans Pro", sans-serif;
   -webkit-appearance: none;
 background-image: url(../img/pointer.png);
 background-size: 12px;
-background-position: 90% center;
+background-position: 95% center;
 background-repeat: no-repeat;
 padding-right: 30px;
 }
@@ -225,7 +225,7 @@ padding-right: 10px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
 }
 
 #doserange {
@@ -271,10 +271,8 @@ cursor: pointer;
 }
 .range__slider .length__title::after {
   content: attr(data-length);
-  position: absolute;
-  right: -16px;
+  padding-left: 5px;
   font-variant-numeric: tabular-nums;
-  color: #8b9494;
 }
 
 
@@ -320,9 +318,25 @@ cursor: pointer;
     left: 8px;
     transform: translateY(-50%);
     font-weight: 800;
-    color: #8b9494;
-    text-transform: uppercase;
-    font-size: 0.65rem;
     pointer-events: none;
     user-select: none;
+}
+
+label, .length__title, .field-title {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9vw;
+  font-weight: 300;
+}
+
+form div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 45%;
+}
+
+form div:nth-of-type(2) {
+  margin-left: 5%;
 }

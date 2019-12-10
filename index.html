@@ -40,20 +40,21 @@
            <label for="weight">Введите вес ребенка:</label>
            <input class="form-input" type="number" min="5" max="40" id="weight" name="weight" value="15">
          </div>
-     <label>Выберите дозировку суспензии:</label>
+     <div><label>Выберите дозировку суспензии:</label>
      <select class="dose-amount form-input">
        <option value="125">125мг/5мл</option>
        <option value="200">200мг/5мл</option>
        <option value="250">250мг/5мл</option>
        <option value="400">400мг/5мл</option>
      </select>
+   </div>
      <div class="length range__slider" data-min="20" data-max="90">
  <div class="length__title field-title" data-length="10">Дозировка на кг:</div>
  <input id="slider" type="range" min="20" max="90" value="40" step="10" style="background: linear-gradient(90deg, rgb(11, 30, 223) 21.4286%, rgba(255, 255, 255, 0.216) 21.5286%);">
  </div>
-     </div>
-      <button class="calcdose" type="submit">Узнать</button>
-      </form>
+       <button class="calcdose recipe-submit" type="submit">Узнать</button>
+</div>
+</form>
 
      </section>
      <section id="b">

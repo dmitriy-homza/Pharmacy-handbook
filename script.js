@@ -61,7 +61,7 @@ form.addEventListener('submit', function (evt) {
 let doseForm = document.querySelector('.ab-dose');
 let medicineDose = document.querySelector('.dose-amount');
 let weight = document.querySelector('#weight');
-let dose = document.querySelector('#doserange');
+let dose = document.querySelector('#slider');
 let volume = 0;
 let doseBlock = document.querySelector('.ab-dose');
 
