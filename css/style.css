@@ -96,15 +96,24 @@ article section {
 }
 
 #b {
- background: magenta;
+  background: #f2f3f7;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 #c {
- background: olive;
+  background: #f2f3f7;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 #d {
- background: dodgerblue;
+  background: #f2f3f7;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 h2 {
