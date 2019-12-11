@@ -22,22 +22,38 @@ var prescriptionNumber = function(pulvNumber) {
     console.log(number)
   }
 
+let rPulvNumber = pulvNumber%10;
+let pulvText = 0;
+
+if (rPulvNumber<5 && rPulvNumber>1) {
+  pulvText = ' порошка ';
+}
+else if (pulvNumber<20 && pulvNumber>=10) {
+  pulvText = ' порошков ';
+}
+else if (rPulvNumber==1) {
+  pulvText = ' порошок ';
+  console.log(rPulvNumber)
+}
+else  {
+  pulvText = ' порошков ';
+}
 
 
   if (number<5 && number>1) {
-    advise.textContent = 'Получилось ' + number + ' рецептурных номера.';
+    advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номера.';
     message.appendChild(advise);
 
   }
   else if (number>=5) {
-    advise.textContent = 'Получилось ' + number + ' рецептурных номеров.';
+    advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номеров.';
     message.appendChild(advise);
   }
-  else if (number = 1) {
-    advise.textContent = 'Получился ' + number + ' рецептурный номер.';
+  else if (number == 1) {
+    advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурный номер.';
     message.appendChild(advise);
   }
-  else if (number=-1) {
+  else if (pulvNumber<1) {
     advise.textContent ='Порошки не берутся из ниоткуда:)';
     message.appendChild(advise);
     console.log('Меньше')
