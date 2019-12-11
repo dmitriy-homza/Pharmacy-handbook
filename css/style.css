@@ -344,7 +344,7 @@ form > div {
   width: 60%;
 }
 
-form div:first-of-type {
+form > div:first-of-type {
   width: 35%;
 }
 
