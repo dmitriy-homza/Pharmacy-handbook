@@ -373,6 +373,7 @@ form div:nth-of-type(2) {
   animation-name: adv_ise;
   color: #2a8f68;
   animation-duration: 1s;
+  font-weight: 800;
 }
 
 @keyframes adv_ise {
