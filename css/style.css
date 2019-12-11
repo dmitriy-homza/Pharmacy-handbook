@@ -46,7 +46,7 @@ font-family: "Source Sans Pro", sans-serif;
 .recipe-submit {
   width: 100%;
     height: 55px;
-    background: #2364d2;
+    background: #2a8f68;
     border: none;
     border-radius: 5px;
     font-size: 22px;
@@ -131,7 +131,7 @@ h3 {
 }
 
 h3 span {
-  color: #34d0c4;
+  color: #2a8f68;
 }
 
 a {
@@ -172,7 +172,7 @@ a {
 .sidebar {
     width: 20%;
     height: 100%;
-    background-image: linear-gradient( -225deg, #5271c4 0%, #b19fff 48%, #eca1fe 100% );
+    background-image: linear-gradient( -225deg, #1C5A41 0%, #5aaf76 100% );
     display: flex;
     position: absolute;
     z-index: 89;
@@ -298,12 +298,12 @@ cursor: pointer;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #34d0c4;
+  background: #2a8f68;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
 #slider::-webkit-slider-thumb:hover {
-  background: #d4d4d4;
+  background: #5aaf76;
   transform: scale(1.2);
 }
 #slider::-moz-range-thumb {
@@ -311,12 +311,12 @@ cursor: pointer;
   height: 20px;
   border: 0;
   border-radius: 50%;
-  background: #34d0c4;
+  background: #2a8f68;
   cursor: pointer;
   transition: background 0.15s ease-in-out;
 }
 #slider::-moz-range-thumb:hover {
-  background: #34d0c4;
+  background: #5aaf76;
 }
 .field-title {
     position: absolute;
@@ -370,5 +370,5 @@ form div:nth-of-type(2) {
 }
 
 .advise {
-  color: #34d0c4;
+  color: #d4d4d4;
 }
