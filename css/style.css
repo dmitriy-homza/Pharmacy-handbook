@@ -437,3 +437,7 @@ td:nth-child(2n){
 border-left: none;
 text-align: right;
 }
+
+.nd {
+  height: auto !important;
+}
