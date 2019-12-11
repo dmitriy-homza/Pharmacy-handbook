@@ -401,3 +401,39 @@ form div:nth-of-type(2) {
     transform: scale(1);
   }
 }
+
+.table {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9vw;
+
+}
+
+table {
+ border-collapse: collapse;
+ width: 100%;
+ table-layout: fixed;
+ box-shadow: 5px 1px 20px 1px #ddd;
+transform: scale(0.98);
+background: white;
+margin-top: 20px;
+}
+td, th {
+  padding: 5px;
+      padding-right: 10px;
+      border: 1px solid #729ea5;
+      border-right: none;
+      text-align: left;
+      text-transform: uppercase;
+}
+
+td:nth-child(2n){
+  border: 1px solid #729ea5;
+border-left: none;
+text-align: right;
+}
