@@ -193,6 +193,7 @@ a {
   .items img {
 vertical-align: middle;
 padding-right: 10px;
+height: 25px;
 }
 
 .items a {
