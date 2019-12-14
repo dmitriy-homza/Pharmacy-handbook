@@ -421,7 +421,10 @@ table {
  box-shadow: 5px 1px 20px 1px #ddd;
 transform: scale(0.98);
 background: white;
-margin-top: 20px;
+}
+
+table:first-of-type {
+  margin-top: 15px;
 }
 td, th {
   padding: 5px;
