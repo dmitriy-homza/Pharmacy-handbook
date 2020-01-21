@@ -78,16 +78,16 @@ right: 0.1%;
   }
 
   .card .card {
-    width: 540px;
+    width: fit-content;
     background-color: white;
       border-radius: 4px;
       margin-top: 8px;
       margin-bottom: 5px;
-      padding: 25px 25px 15px 25px;
+      padding: 25px 25px 30px 25px;
       transition: 0.3s;
       height: 45%;
       margin-left: 3%;
-      height: 340px;
+      height: fit-content;
       display: block;
   }
 
@@ -107,7 +107,7 @@ right: 0.1%;
   .prescription-number {
     width: 40%;
     margin-top: 2%;
-    height: 258px;
+    height: fit-content;
     min-width: 446px;
   }
 
@@ -529,6 +529,9 @@ h4 span {
     top: 0px;
   }
 
+label, .length__title, .field-title {
+  font-size: 15px;
+}
 
   .items p {
     color: rgba(255, 255, 255, 1);
@@ -570,8 +573,9 @@ h4 span {
       padding: 25px 25px 15px 25px;
       transition: 0.3s;
       margin: 3%;
-      height: 340px;
+      height: fit-content;
       display: flex;
+      transition: 1s;
   }
 
   section > .card:hover {
