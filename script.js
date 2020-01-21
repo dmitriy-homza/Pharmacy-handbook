@@ -1,22 +1,22 @@
 var form = document.querySelector('.prescription-form');
 var pulvNumber = document.querySelector('#recipe-number');
-var message = document.querySelector('.recipe-description');
+var message = document.querySelector('.pc');
+var smart = document.querySelector('.smart');
 var number = 0;
 //функция расчета номеров
 var prescriptionNumber = function(pulvNumber) {
-
-
   var advise = document.createElement('h3');
   //добавляем класс для удаления повторяющихся элементов
   advise.classList.add('advise');
 
   if (pulvNumber<=20 && pulvNumber>0) {
     number=1;
-
   }
+
   else if (pulvNumber>20 ) {
     number = 1+Math.ceil((pulvNumber-20)/20)*0.5;
   }
+
   else if (pulvNumber<=0 ) {
     number = -1;
     console.log(number)
@@ -42,20 +42,24 @@ else  {
 
   if (number<5 && number>1) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номера.';
+    smart.appendChild(advise);
     message.appendChild(advise);
-
   }
   else if (number>=5) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номеров.';
-    message.appendChild(advise);
+message.appendChild(advise);
+    smart.appendChild(advise);
+
   }
   else if (number == 1) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурный номер.';
+    smart.appendChild(advise);
     message.appendChild(advise);
   }
   else if (pulvNumber<1) {
     advise.textContent ='Порошки не берутся из ниоткуда:)';
     message.appendChild(advise);
+    smart.appendChild(advise);
     console.log('Меньше')
   }
 
@@ -67,7 +71,7 @@ else  {
 form.addEventListener('submit', function (evt) {
   evt.preventDefault();
   removeAnswer();
-  console.log('Схватил')
+  console.log('Схватил');
   var input = pulvNumber.value;
   prescriptionNumber(input);
 });
