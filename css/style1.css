@@ -23,6 +23,7 @@ header {
     height: 100%;
     background-image: linear-gradient( -225deg, #1C5A41 0%, #5aaf76 100% );
     position: fixed;
+    top: 0px;
     z-index: 89;
     box-shadow: 0 0px 20px 0 rgba(90, 116, 148, 0.8);
     transition-duration: 0.5s;
@@ -32,6 +33,8 @@ header:hover {
   width: 15%;
   transition-duration: 1s;
 }
+
+
 
 .items {
     margin-top: 20px;
@@ -68,6 +71,10 @@ header:hover p {
   color: rgba(255, 255, 255, 1);
   transition: 1s;
   right: 0px;
+}
+
+.hid-nav {
+  display: none;
 }
 }
 
@@ -509,6 +516,7 @@ h4 span {
     display: flex;
     position: fixed;
     padding: 0px;
+    top: 0px;
   }
 
 
@@ -528,9 +536,14 @@ h4 span {
 
   .items a {
     padding: 0px 20px;
+    font-size: 25px;
   }
 
   main {
     width: 100%;
+    background: #f2f3f7;
+  }
+  .hid-nav {
+    display: flex;
   }
 }
