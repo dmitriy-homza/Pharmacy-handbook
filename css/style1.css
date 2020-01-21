@@ -77,13 +77,40 @@ right: 0.1%;
     display: none;
   }
 
-  .card .smart {
-    display: none;
+  .card .card {
+    width: 540px;
+    background-color: white;
+      border-radius: 4px;
+      margin-top: 8px;
+      margin-bottom: 5px;
+      padding: 25px 25px 15px 25px;
+      transition: 0.3s;
+      height: 45%;
+      margin-left: 3%;
+      height: 340px;
+      display: block;
   }
 
-  section > .recipe-dexcriprion {
-    display: block;
+  .card .card:hover {
+    box-shadow: 5px 1px 20px 1px #ddd;
+    transform: scale(0.98);
   }
+
+  .card {
+    display: flex;
+  }
+
+  .card:hover {
+
+  }
+
+  .prescription-number {
+    width: 40%;
+    margin-top: 2%;
+    height: 258px;
+    min-width: 446px;
+  }
+
 }
 
 
@@ -252,30 +279,7 @@ a {
  background: #148bff;
 }
 
-.card {
-  width: 540px;
-  background-color: white;
-    border-radius: 4px;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    padding: 25px 25px 15px 25px;
-    transition: 0.3s;
-    height: 45%;
-    margin-left: 3%;
-    height: 340px;
-}
 
-.card:hover {
-  box-shadow: 5px 1px 20px 1px #ddd;
-  transform: scale(0.98);
-}
-
-.prescription-number {
-  width: 40%;
-  margin-top: 2%;
-  height: 258px;
-  min-width: 446px;
-}
 
 .ab-dose {
   width: 460px;
@@ -406,12 +410,9 @@ form div:nth-of-type(2) {
   padding: 5px;
 }
 
-.card:last-of-type {
-  height: 327px;
-}
 
 .recipe-description {
-  margin: 2%;
+  margin: 0px 2%;
   height: 258px;
 }
 
@@ -562,22 +563,30 @@ h4 span {
   }
 
 
-  .card {
+  section > .card {
     width: 100%;
-    margin: 20px;
-    display: flex;
+    background-color: white;
+      border-radius: 4px;
+      padding: 25px 25px 15px 25px;
+      transition: 0.3s;
+      margin: 3%;
+      height: 340px;
+      display: flex;
   }
 
-  .card:first-of-type div {
-    width: 50%;
-    padding: 20px;
+  section > .card:hover {
+    box-shadow: 5px 1px 20px 1px #ddd;
+    transform: scale(0.98);
   }
 
-  .card .smart {
+  .card .card {
     display: block;
+    padding: 0px 15px;
+    width: 45%;
   }
 
-  section > .recipe-description {
-    display: none;
+  .recipe-description h3:first-of-type {
+    padding-top: 0px;
   }
+
 }

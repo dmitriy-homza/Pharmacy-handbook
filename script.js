@@ -1,7 +1,6 @@
 var form = document.querySelector('.prescription-form');
 var pulvNumber = document.querySelector('#recipe-number');
-var message = document.querySelector('.pc');
-var smart = document.querySelector('.smart');
+var message = document.querySelector('.recipe-description');
 var number = 0;
 //функция расчета номеров
 var prescriptionNumber = function(pulvNumber) {
@@ -42,25 +41,18 @@ else  {
 
   if (number<5 && number>1) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номера.';
-    smart.appendChild(advise);
     message.appendChild(advise);
   }
   else if (number>=5) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номеров.';
-message.appendChild(advise);
-    smart.appendChild(advise);
-
+    message.appendChild(advise);
   }
   else if (number == 1) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурный номер.';
-    smart.appendChild(advise);
     message.appendChild(advise);
   }
   else if (pulvNumber<1) {
     advise.textContent ='Порошки не берутся из ниоткуда:)';
-    message.appendChild(advise);
-    smart.appendChild(advise);
-    console.log('Меньше')
   }
 
 
