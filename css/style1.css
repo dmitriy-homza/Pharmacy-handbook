@@ -66,17 +66,26 @@ right: 0.1%;
 
 
 @media only screen and (min-width: 1366px) {
-header:hover p {
-  visibility: visible;
-  color: rgba(255, 255, 255, 1);
-  transition: 1s;
-  right: 0px;
+  header:hover p {
+    visibility: visible;
+    color: rgba(255, 255, 255, 1);
+    transition: 1s;
+    right: 0px;
+  }
+
+  .hid-nav {
+    display: none;
+  }
+
+  .card .smart {
+    display: none;
+  }
+
+  section > .recipe-dexcriprion {
+    display: block;
+  }
 }
 
-.hid-nav {
-  display: none;
-}
-}
 
 main {
   width: 95%;
@@ -552,15 +561,23 @@ h4 span {
     display: flex;
   }
 
-  .prescription-number {
-    width: 100%;
-    margin: 20px;
-    height: 258px;
-    min-width: 446px;
-}
 
   .card {
     width: 100%;
     margin: 20px;
+    display: flex;
+  }
+
+  .card:first-of-type div {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .card .smart {
+    display: block;
+  }
+
+  section > .recipe-description {
+    display: none;
   }
 }

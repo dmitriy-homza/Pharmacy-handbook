@@ -28,18 +28,25 @@
 </div>
   <main>
     <section id="a">
-    <div id="prescription" class="card prescription-number">
+
+    <div id="prescription" class="card">
+      <div class="prescription-number">
         <h2>расчет <span>рецептурных номеров</span>:</h2>
         <form class="prescription-form" method="post">
         <label for="recipe-number" class="add-number-label"><h3>Введите <span>количество порошков</span>:</h3></label>
-        <input id="recipe-number" class="form-input" type="text" placeholder="Количество порошков..." required>
+        <input id="recipe-number" class="form-input" type="number" placeholder="Количество порошков..." required>
         <button class="recipe-submit" type="submit">Узнать</button>
       </form>
+      </div>
+      <div class="recipe-description smart">
+        <h3>За <span>первые 20</span> и менее порошков начисляется <span>1 рецептурный номер</span>. <br><br>За каждые <span>последующие 20 и менее</span> порошков - <span>0.5 рецептурного номера</span>.</h3>
+      </div>
     </div>
+
     <div class="card recipe-description">
       <h3>За <span>первые 20</span> и менее порошков начисляется <span>1 рецептурный номер</span>. <br><br>За каждые <span>последующие 20 и менее</span> порошков - <span>0.5 рецептурного номера</span>.</h3>
-
     </div>
+
     <div id="ab" class="card ab-dose">
     <form class="" method="post">
     <h2>Рассчет объема <span>суспензии амоксициллина</span>:</h2>
