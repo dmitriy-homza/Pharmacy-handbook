@@ -76,38 +76,61 @@
 
 
 
-    <section id="a">
 
 
-    <div class="card-flip">
+         <div class="card-flip">
+                <input type="checkbox" id="card2" class="more" aria-hidden="true">
+                <div class="content">
+                    <div class="front">
+                        <div class="inner">
       <div id="ab" class="card ab-dose">
       <form class="" method="post">
       <h2>Рассчет объема <span>суспензии амоксициллина</span>:</h2>
+      <div class="ab-input">
       <div class="weight-block">
             <label for="weight">Введите вес ребенка:</label>
             <input class="form-input" autocomplete="off" type="number" min="5" max="40" id="weight" name="weight" value="15">
-          </div>
-      <div><label>Выберите дозировку суспензии:</label>
-      <select class="dose-amount form-input">
-        <option value="125">125мг/5мл</option>
-        <option value="200">200мг/5мл</option>
-        <option value="250">250мг/5мл</option>
-        <option value="400">400мг/5мл</option>
-      </select>
+      </div>
+      <div class="dose-block">
+          <label>Выберите дозировку суспензии:</label>
+        <select class="dose-amount form-input">
+          <option value="125">125мг/5мл</option>
+          <option value="200">200мг/5мл</option>
+          <option value="250">250мг/5мл</option>
+          <option value="400">400мг/5мл</option>
+        </select>
+      </div>
+
     </div>
       <div class="length range__slider" data-min="20" data-max="90">
   <div class="length__title field-title" data-length="10">Дозировка на кг:</div>
   <input id="slider" type="range" min="20" max="90" value="40" step="10" style="    background-image: linear-gradient( -225deg, #1C5A41 0%, #5aaf76 100% );">
   </div>
         <button class="calcdose recipe-submit" type="submit">Узнать</button>
+        <div class="">
+        <label for="card2" class="button recipe-submit" aria-hidden="true">
+            Как рассчитывается?
+        </div>
   </form>
   </div>
-  <div class="card ab-description">
-  <h3><span>Для детей с массой тела менее 40 кг.</span><br><br>Острый синусит, острый средний отит, внебольничная пневмония, острый цистит: <span>доза 20-90 мг/кг</span><br><br>Острый стрептококковый тонзиллит: <span>доза 40-90 мг/кг</span></h3>
+</div>
+</div>
+  <div class="back">
+      <div class="inner">
+        <div class="card ab-description">
+        <h3><span>Для детей с массой тела менее 40 кг.</span><br><br>Острый синусит, острый средний отит, внебольничная пневмония, острый цистит: <span>доза 20-90 мг/кг</span><br><br>Острый стрептококковый тонзиллит: <span>доза 40-90 мг/кг</span></h3>
+        </div>
+         <label for="card2" class="button return" aria-hidden="true">
+              К рассчету
+         </label>
+      </div>
   </div>
-    </div>
 
-    </section>
+
+</div>
+</div>
+
+
 
 
     <section id="b">

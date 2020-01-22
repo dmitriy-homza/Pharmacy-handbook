@@ -260,7 +260,7 @@ a {
 
 
 .ab-dose {
-  width: 460px;
+
 }
 
 .ab-dose form {
@@ -369,9 +369,7 @@ label, .length__title, .field-title {
 
 
 form > div {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: inline-grid;
   margin-top: 10px;
 }
 
@@ -720,7 +718,7 @@ h4 span {
   }
 
 label, .length__title, .field-title {
-  font-size: 15px;
+  font-size: 20px;
 }
 
   .items p {
@@ -785,6 +783,8 @@ label, .length__title, .field-title {
   .form-input {
     height: 75px;
     font-size: 30px;
+    width: 100%;
+    display: flex;
   }
 
   h2 {
@@ -819,4 +819,17 @@ label, .length__title, .field-title {
     font-weight: 500;
   }
 
+  .ab-input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .weight-block {
+    width: 40%;
+  }
+
+  .dose-block {
+  margin-left: 40px;
+  }
 }
