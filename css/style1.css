@@ -495,83 +495,6 @@ h4 span {
   display: flex;
 }
 
-
-@media only screen and (max-width: 1365px) {
-  header {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    position: fixed;
-    padding: 0px;
-    top: 0px;
-  }
-
-label, .length__title, .field-title {
-  font-size: 15px;
-}
-
-  .items p {
-    color: rgba(255, 255, 255, 1);
-    visibility: visible;
-  }
-
-  header:hover {
-    width: 100%;
-  }
-
-  .items {
-    display: flex;
-    margin: 15px auto;
-  }
-
-  .items a {
-    padding: 20px 20px;
-    font-size: 30px;
-    font-family: "Source Sans Pro", sans-serif;
-  }
-
-  .items p {
-    padding-left: 5px;
-  }
-
-  main {
-    width: 100%;
-    background: #f2f3f7;
-  }
-  .hid-nav {
-    display: flex;
-  }
-
-
-  section > .card {
-    width: 100%;
-    background-color: white;
-      border-radius: 4px;
-      padding: 25px 25px 15px 25px;
-      transition: 0.3s;
-      margin: 3%;
-      height: fit-content;
-      display: flex;
-      transition: 1s;
-  }
-
-  section > .card:hover {
-    box-shadow: 5px 1px 20px 1px #ddd;
-    transform: scale(0.98);
-  }
-
-  .card-flip {
-    width: 100%;
-  }
-
-  .recipe-description h3:first-of-type {
-    padding-top: 0px;
-  }
-
-}
-
-
-
 /* Новые карточки стили */
 * {
   box-sizing: border-box;
@@ -792,4 +715,95 @@ label, .length__title, .field-title {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #2a8f68;
+}
+
+
+@media only screen and (max-width: 1365px) {
+  header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    position: fixed;
+    padding: 0px;
+    top: 0px;
+  }
+
+label, .length__title, .field-title {
+  font-size: 15px;
+}
+
+  .items p {
+    color: rgba(255, 255, 255, 1);
+    visibility: visible;
+  }
+
+  header:hover {
+    width: 100%;
+  }
+
+  .items {
+    display: flex;
+    margin: 15px auto;
+  }
+
+  .items a {
+    padding: 20px 20px;
+    font-size: 30px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  .items p {
+    padding-left: 5px;
+  }
+
+  main {
+    width: 100%;
+    background: #f2f3f7;
+  }
+  .hid-nav {
+    display: flex;
+  }
+
+
+  section > .card {
+    width: 100%;
+    background-color: white;
+      border-radius: 4px;
+      padding: 25px 25px 15px 25px;
+      transition: 0.3s;
+      margin: 3%;
+      height: fit-content;
+      display: flex;
+      transition: 1s;
+  }
+
+  section > .card:hover {
+    box-shadow: 5px 1px 20px 1px #ddd;
+    transform: scale(0.98);
+  }
+
+  .card-flip {
+    width: 100% !important;
+    height: 500px;
+  }
+
+  .recipe-description h3:first-of-type {
+    padding-top: 0px;
+  }
+
+  .form-input {
+    height: 75px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  .front {
+    height: unset;
+  }
 }
