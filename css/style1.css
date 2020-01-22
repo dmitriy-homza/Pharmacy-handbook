@@ -78,15 +78,6 @@ right: 0.1%;
     display: none;
   }
 
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card:hover {
-
-  }
-
   .prescription-number {
     width: 40%;
     margin-top: 2%;
@@ -569,10 +560,8 @@ label, .length__title, .field-title {
     transform: scale(0.98);
   }
 
-  .card .card {
-    display: block;
-    padding: 0px 15px;
-    width: 45%;
+  .card-flip {
+    width: 100%;
   }
 
   .recipe-description h3:first-of-type {
