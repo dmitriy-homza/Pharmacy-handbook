@@ -1,6 +1,8 @@
 var form = document.querySelector('.prescription-form');
 var pulvNumber = document.querySelector('#recipe-number');
 var message = document.querySelector('.answer');
+var card = document.querySelector('.card-flip');
+var front = document.querySelector('.pulv .front')
 var number = 0;
 //функция расчета номеров
 var prescriptionNumber = function(pulvNumber) {
@@ -42,18 +44,34 @@ else  {
   if (number<5 && number>1) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номера.';
     message.appendChild(advise);
+    front.classList.remove('plus-height649');
+    card.classList.remove('plus-height649');
+    card.classList.add('plus-height');
+    front.classList.add('plus-height');
   }
   else if (number>=5) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурных номеров.';
     message.appendChild(advise);
+    front.classList.remove('plus-height649');
+    card.classList.remove('plus-height649');
+    card.classList.add('plus-height');
+    front.classList.add('plus-height');
   }
   else if (number == 1) {
     advise.textContent = pulvNumber + pulvText + 'рассчитывается как ' + number + ' рецептурный номер.';
     message.appendChild(advise);
+    front.classList.remove('plus-height649');
+    card.classList.remove('plus-height649');
+    card.classList.add('plus-height');
+    front.classList.add('plus-height');
   }
   else if (pulvNumber<1) {
     advise.textContent ='Порошки не берутся из ниоткуда:)';
     message.appendChild(advise);
+    front.classList.remove('plus-height');
+    card.classList.remove('plus-height');
+    card.classList.add('plus-height649');
+    front.classList.add('plus-height649');
   }
 
 
@@ -63,6 +81,8 @@ else  {
 //обработчик события нажатия
 form.addEventListener('submit', function (evt) {
   evt.preventDefault();
+  abCard.classList.remove('plus-height');
+  abFront.classList.remove('plus-height');
   removeAnswer();
   console.log('Схватил');
   var input = pulvNumber.value;
@@ -76,7 +96,9 @@ let medicineDose = document.querySelector('.dose-amount');
 let weight = document.querySelector('#weight');
 let dose = document.querySelector('#slider');
 let volume = 0;
-let doseBlock = document.querySelector('.ab-description');
+let doseBlock = document.querySelector('.ab-answer');
+let abCard = document.querySelector('.ab-card');
+let abFront = document.querySelector('.ab-card .front');
 
 let getVolume = function (weight, medicineDose, dose) {
   let advise = document.createElement('h3');
@@ -98,7 +120,13 @@ let removeAnswer = function(){
 doseForm.addEventListener('submit', function (evt2) {
   evt2.preventDefault();
   removeAnswer();
+  front.classList.remove('plus-height649');
+  card.classList.remove('plus-height649');
+  front.classList.remove('plus-height');
+  card.classList.remove('plus-height');
   getVolume(weight.value, medicineDose.value, dose.value);
+  abCard.classList.add('plus-height');
+  abFront.classList.add('plus-height');
 });
 
 //слайдер
