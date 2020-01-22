@@ -1,6 +1,6 @@
 var form = document.querySelector('.prescription-form');
 var pulvNumber = document.querySelector('#recipe-number');
-var message = document.querySelector('.recipe-description');
+var message = document.querySelector('.answer');
 var number = 0;
 //функция расчета номеров
 var prescriptionNumber = function(pulvNumber) {
@@ -53,6 +53,7 @@ else  {
   }
   else if (pulvNumber<1) {
     advise.textContent ='Порошки не берутся из ниоткуда:)';
+    message.appendChild(advise);
   }
 
 
