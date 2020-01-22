@@ -27,32 +27,54 @@
   <a href="#d"><img src="img/eye.svg"><p>НД</p></a>
 </div>
   <main>
+
+
+    <div class="card-flip">
+           <input type="checkbox" id="card1" class="more" aria-hidden="true">
+           <div class="content">
+               <div class="front">
+                   <div class="inner">
+                     <div id="prescription" class="card">
+                          <h2>расчет <span>рецептурных номеров</span></h2>
+                          <form class="prescription-form" method="post">
+                          <label for="recipe-number" class="add-number-label"><h3>Введите <span>количество порошков</span>:</h3></label>
+                          <input id="recipe-number" class="form-input" type="number" autocomplete="off" placeholder="Количество порошков..." required>
+                          <button class="recipe-submit button" type="submit">Узнать</button>
+                        </form>
+                          <label for="card1" class="button recipe-submit" aria-hidden="true">
+                            Как рассчитывается?
+                          </label>
+                     </div>
+                   </div>
+               </div>
+               <div class="back">
+                   <div class="inner">
+                     <div class="card recipe-description">
+                     <h3>За <span>первые 20</span> и менее порошков начисляется <span>1 рецептурный номер</span>. <br><br>За каждые <span>последующие 20 и менее</span> порошков - <span>0.5 рецептурного номера</span>.</h3>
+                     </div>
+                      <label for="card1" class="button return" aria-hidden="true">
+                           К рассчету
+                      </label>
+                   </div>
+               </div>
+           </div>
+         </div>
+
+
+
+
+
+
     <section id="a">
 
-    <div id="prescription" class="card">
-     <div class="card">
-       <div class="prescription-number">
-         <h2>расчет <span>рецептурных номеров</span>:</h2>
-         <form class="prescription-form" method="post">
-         <label for="recipe-number" class="add-number-label"><h3>Введите <span>количество порошков</span>:</h3></label>
-         <input id="recipe-number" class="form-input" type="number" placeholder="Количество порошков..." required>
-         <button class="recipe-submit" type="submit">Узнать</button>
-       </form>
-       </div>
-     </div>
 
-        <div class="card recipe-description">
-          <h3>За <span>первые 20</span> и менее порошков начисляется <span>1 рецептурный номер</span>. <br><br>За каждые <span>последующие 20 и менее</span> порошков - <span>0.5 рецептурного номера</span>.</h3>
-      </div>
-    </div>
-
-    <div class="card">
+    <div class="card-flip">
       <div id="ab" class="card ab-dose">
       <form class="" method="post">
       <h2>Рассчет объема <span>суспензии амоксициллина</span>:</h2>
       <div class="weight-block">
             <label for="weight">Введите вес ребенка:</label>
-            <input class="form-input" type="number" min="5" max="40" id="weight" name="weight" value="15">
+            <input class="form-input" autocomplete="off" type="number" min="5" max="40" id="weight" name="weight" value="15">
           </div>
       <div><label>Выберите дозировку суспензии:</label>
       <select class="dose-amount form-input">
