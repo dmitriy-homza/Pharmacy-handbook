@@ -94,6 +94,23 @@ transform: scale(0.98);
 }
 
 
+@keyframes ab-anim {
+  from {
+    opacity: 0;
+    height: 0em;
+  }
+
+50% {
+  opacity: 0;
+}
+
+  to {
+    opacity: 1;
+    height: 2em;
+  }
+}
+
+
 @media only screen and (min-width: 1366px) {
 
   .pulv form {
@@ -153,10 +170,12 @@ transform: scale(0.98);
 
   .dose-block {
   margin-left: 40px;
+  transition-duration: 0.3s;
   }
 
   .ab-card .plus-height {
     height: 410px !important;
+    transition-duration: 0.3s;
   }
 
   .ab-card .plus-height649 {
@@ -167,9 +186,11 @@ transform: scale(0.98);
     height: 100%;
   }
 
-  .advise {
-    padding: 10px 0px;
+  .ab-card .front {
+    transition: 0.3s;
   }
+
+
 
   .advise h3 {
     padding-top: 5px;
@@ -181,6 +202,11 @@ transform: scale(0.98);
 
 .answer {
   margin-top: 6px;
+}
+
+.ab-card .advise {
+  animation-name: ab-anim;
+  animation-duration: 0.3s;
 }
 
 
@@ -567,6 +593,7 @@ form > div {
     opacity: 0;
     height: 0em;
   }
+
 
   to {
     opacity: 1;
@@ -1035,7 +1062,7 @@ label, .length__title, .field-title {
   .plus-height {
     height: 548px;
     animation-name: plusheight;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
   }
 
   .plus-height649 {
@@ -1058,4 +1085,7 @@ label, .length__title, .field-title {
     padding: 20px 0px;
   }
 
+  .ab-card .advise {
+    animation-name: ab-anim;
+  }
 }

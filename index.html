@@ -314,8 +314,11 @@
   <script>
 $(function(){
 
+var langs = ["Бензобарбитал 25 гр.", "Дифенгидрамин р-р для инъекций 10 ампул", "Дифенгидрамин табл. 50 мг. 20 таблеток"];
+
+
 	$("#search").autocomplete({
-		source: 'search.php',
+		source: langs
 	});
 
 });
