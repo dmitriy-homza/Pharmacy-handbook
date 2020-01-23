@@ -110,6 +110,25 @@ transform: scale(0.98);
   }
 }
 
+@keyframes pulv-anim {
+  from {
+    opacity: 0;
+    height: 0px;
+    padding: 0px 0px;
+  }
+
+50% {
+  opacity: 0;
+}
+
+  to {
+    opacity: 1;
+    height: 118px;
+    padding: 20px 0px;
+  }
+}
+
+
 
 
 
@@ -1094,23 +1113,5 @@ label, .length__title, .field-title {
 
   .pulv .advise {
     animation-name: pulv-anim;
-  }
-
-  @keyframes pulv-anim {
-    from {
-      opacity: 0;
-      height: 0px;
-      padding: 0px 0px;
-    }
-
-  50% {
-    opacity: 0;
-  }
-
-    to {
-      opacity: 1;
-      height: 118px;
-      padding: 20px 0px;
-    }
   }
 }
