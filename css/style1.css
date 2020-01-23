@@ -96,6 +96,98 @@ transform: scale(0.98);
 
 @media only screen and (min-width: 1366px) {
 
+  .pulv form {
+    display: flex;
+    height: calc(100% - 28px);
+    flex-direction: column;
+
+  }
+
+  .card-flip {
+    width: 100% !important;
+    height: 450px;
+  }
+
+  .recipe-description h3:first-of-type {
+    padding-top: 0px;
+  }
+
+  .form-input {
+    height: 48px;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+  }
+
+  .form-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+        margin-top: auto;
+        align-self: flex-end;
+  }
+
+  .form-buttons > div {
+    flex-grow: 1;
+  }
+
+  .form-buttons > div:first-of-type {
+    margin-right: 20px;
+  }
+
+  .button {
+    padding: 5px;
+    height: 80px;
+    font-weight: 500;
+  }
+
+  .ab-input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .weight-block {
+    width: 40%;
+  }
+
+  .dose-block {
+  margin-left: 40px;
+  }
+
+  .ab-card .plus-height {
+    height: 410px !important;
+  }
+
+  .ab-card .plus-height649 {
+    height: 510px !important;
+  }
+
+  .front {
+    height: 100%;
+  }
+
+  .advise {
+    padding: 10px 0px;
+  }
+
+  .advise h3 {
+    padding-top: 5px;
+  }
+
+.front .inner, .back .inner {
+  width: 100%;
+}
+
+.answer {
+  margin-top: 6px;
+}
+
+
+
+
+
+
     .pulv {
       max-width: 480px;
     }
@@ -110,16 +202,16 @@ transform: scale(0.98);
     }
 
     .weight-block {
-      min-width: 66px;
-    flex-grow: 1;
-    max-width: 265px;
+      min-width: 150px;
+  flex-grow: 1;
+  max-width: 170px;
     }
 
     .dose-block {
       margin-left: 40px;
-      min-width: 400px;
+      min-width: 275px;
       flex-grow: 2;
-      max-width: 440px;
+      max-width: 330px;
     }
 
   .form-buttons {
@@ -340,8 +432,8 @@ a {
 
 .ab-dose form {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
@@ -439,7 +531,7 @@ cursor: pointer;
 label, .length__title, .field-title {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9vw;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -467,23 +559,31 @@ form > div {
   color: #2a8f68;
   animation-duration: 1s;
   font-weight: 800;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 @keyframes adv_ise {
   from {
     opacity: 0;
-    transform: scale(0.98);
+    height: 0em;
   }
 
-  50% {
-    transform: scale(1.06);
-  }
   to {
     opacity: 1;
-    transform: scale(1);
+    height: 2em;
   }
 }
+
+@keyframes plusheight {
+  from {
+    height: 450px;
+  }
+
+  to {
+    height: 548px;
+  }
+}
+
 
 .table {
   display: flex;
@@ -578,6 +678,7 @@ h4 span {
   perspective: 1500px;
   min-width: 390px;
   flex-grow: 1;
+  max-width: 610px;
 }
 .card-flip .content {
   width: 100%;
@@ -620,7 +721,8 @@ h4 span {
     border-radius: 4px;
     transition: 0.3s;
     display: flex;
-    transition: 0.4s;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0, 0.64, 0.58, 1);
 }
 
 .front:hover {
@@ -654,7 +756,6 @@ h4 span {
 }
 .back .inner {
   grid-template-rows: 1fr 2fr;
-  grid-template-columns: repeat(4, auto);
   grid-column-gap: 0.8em;
   justify-items: center;
 }
@@ -785,6 +886,25 @@ h4 span {
 
 
 @media only screen and (max-width: 1365px) {
+
+  .answer {
+    margin-top: 0px;
+  }
+
+  @keyframes adv_ise {
+    from {
+      opacity: 0;
+      height: 0px;
+      padding: 0px 0px;
+    }
+
+    to {
+      opacity: 1;
+      height: 118px;
+      padding: 20px 0px;
+    }
+  }
+
   header {
     width: 100%;
     height: fit-content;
@@ -851,6 +971,7 @@ label, .length__title, .field-title {
   .card-flip {
     width: 100% !important;
     height: 450px;
+    max-width: unset;
   }
 
   .recipe-description h3:first-of-type {
@@ -910,6 +1031,8 @@ label, .length__title, .field-title {
 
   .plus-height {
     height: 548px;
+    animation-name: plusheight;
+    animation-duration: 1s;
   }
 
   .plus-height649 {
@@ -922,6 +1045,10 @@ label, .length__title, .field-title {
 
   .front {
     height: 100%;
+  }
+
+  .front .inner {
+    width: 100%;
   }
 
   .advise {

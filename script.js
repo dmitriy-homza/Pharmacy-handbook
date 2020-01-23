@@ -83,6 +83,7 @@ form.addEventListener('submit', function (evt) {
   evt.preventDefault();
   abCard.classList.remove('plus-height');
   abFront.classList.remove('plus-height');
+  abBack.classList.remove('plus-height');
   removeAnswer();
   console.log('Схватил');
   var input = pulvNumber.value;
@@ -99,6 +100,7 @@ let volume = 0;
 let doseBlock = document.querySelector('.ab-answer');
 let abCard = document.querySelector('.ab-card');
 let abFront = document.querySelector('.ab-card .front');
+let abBack = document.querySelector('.ab-card .back');
 
 let getVolume = function (weight, medicineDose, dose) {
   let advise = document.createElement('h3');
@@ -124,9 +126,11 @@ doseForm.addEventListener('submit', function (evt2) {
   card.classList.remove('plus-height649');
   front.classList.remove('plus-height');
   card.classList.remove('plus-height');
+  abBack.classList.remove('plus-height');
   getVolume(weight.value, medicineDose.value, dose.value);
   abCard.classList.add('plus-height');
   abFront.classList.add('plus-height');
+  abBack.classList.add('plus-height');
 });
 
 //слайдер
