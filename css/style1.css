@@ -684,7 +684,7 @@ h4 span {
   width: 100%;
   height: inherit;
   transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.75, 0, 0.85, 1);
+  transition: transform 0.3s cubic-bezier(0.75, 0, 0.85, 1);
 }
 
 .more {
@@ -868,7 +868,7 @@ h4 span {
   background-color: #2a8f68;
   color: #fff;
   box-shadow: none;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 ::-webkit-scrollbar {
