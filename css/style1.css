@@ -557,7 +557,7 @@ form > div {
 .advise {
   animation-name: adv_ise;
   color: #2a8f68;
-  animation-duration: 1s;
+  animation-duration: .5s;
   font-weight: 800;
   padding-top: 10px;
 }
@@ -859,8 +859,8 @@ h4 span {
 .button.return {
   margin-top: auto;
   line-height: 3em;
-    color: #ffffff;
-    border-color: #ffffff;
+    color: #2a8f68;;
+    border: 1px #2a8f68 solid;
     text-shadow: none;
       transition: 1s;
 }
