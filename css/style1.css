@@ -17,6 +17,34 @@ font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Стили поиска по НЕР*/
+
+
+
+.card-ner {
+  height: auto;
+  width: 100%;
+  background-color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin: 1em;
+    transition: 0.5s;
+}
+
+.card-ner h2 {
+  grid-row: 2;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-ner:hover {
+  box-shadow: 5px 1px 20px 1px #ddd;
+  transform: scale(0.98);
+}
+
+
 .hide {
   display: none;
 }
@@ -31,29 +59,21 @@ font-family: "Source Sans Pro", sans-serif;
 }
 
 #ner {
-  background: whitesmoke;
-  left: 50%;
-  margin-top: 35px;
-  width: 650px;
+  width: 100%;
   padding: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  box-shadow: inset 1px 1px 0 white;
   max-height: 450px;
+  padding: 2.5em;
 }
 
-ul {
+.card-ner ul {
   margin: 0 auto;
   padding: 0;
-  max-height: 390px;
+  max-height: 320px;
   overflow-y: auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 5px 5px 0 5px;
-  border-left: none;
-  border-right: none;
 }
 
-li {
+.card-ner li {
   list-style: none;
   background-color: rgba(0, 0, 0, 0.05);
   background-image:
@@ -73,6 +93,14 @@ li {
   border-radius: 3px;
 }
 
+.card-ner .ls {
+background-image: linear-gradient( 90deg, #e6e4de 10px, #EEE 10px, #EEE 11px, transparent 11px);
+}
+
+.car-ner .psy {
+  background-image: linear-gradient( 90deg, #faf885 10px, #EEE 10px, #EEE 11px, transparent 11px);
+}
+
 #query {
   width: 100%;
   box-sizing: border-box;
@@ -86,17 +114,7 @@ li {
 }
 
 #ner span {
-  display: block;
-  position: absolute;
-  background: #FFD32E;
-  bottom: -35px;
-  left: -1px;
-  width: 360px;
-  border-radius: 0 0 5px 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+  color: #2a8f68;
 }
 
 #ner select {
@@ -105,15 +123,15 @@ li {
   margin-top: -45px;
   border-radius: 0 3px 3px 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #2a8f68;
   position: absolute;
   padding: 7.5px;
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 #ner select:focus, #query:focus {
-  border: 1px solid #FFD32E;
-  box-shadow: 0 0 10px rgba(255, 255, 0, 0.1);
+  border: 1px solid #2a8f68;
+  box-shadow: 0 0 10px #2a8f68;
   outline: none;
 }
 

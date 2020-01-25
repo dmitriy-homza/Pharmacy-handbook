@@ -142,18 +142,27 @@
 
 </div>
 
-
+<div class="card-ner">
   <div id="ner" ng-app="ner-search" ng-controller="NotebookListCtrl">
+    <h2>Начните вводите <b>название лс</b>, чтобы унзать <span>норму единовременной реализации</span> для него:</h2>
+
   <input type="text" id="query" ng-model="query"/>
   <ul>
-    <li ng-repeat="notebook in notebooks | filter:query | orderBy: orderList">
-      Название: {{notebook.name}}<br/>
-      Тип ЛС: {{notebook.procesor}}<br/>
-      <div class="right top">{{notebook.age}}</div>
+    <li ng-repeat="ls in nerLS | filter:query | orderBy: orderList" class="ls">
+      Название: {{ls.name}}<br/>
+      Тип ЛС: {{ls.type}}<br/>
+      <div class="right top">{{ls.dose}}</div>
+    </li>
+    <li ng-repeat="ls in nerPSY | filter:query | orderBy: orderList" class="psy">
+      Название: {{ls.name}}<br/>
+      Тип ЛС: {{ls.type}}<br/>
+      <div class="right top">{{ls.dose}}</div>
     </li>
   </ul>
 
 </div>
+</div>
+
 
 
 
