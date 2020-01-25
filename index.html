@@ -144,19 +144,20 @@
 
 <div class="card-ner">
   <div id="ner" ng-app="ner-search" ng-controller="NotebookListCtrl">
-    <h2>Начните вводите <b>название лс</b>, чтобы унзать <span>норму единовременной реализации</span> для него:</h2>
+    <h2>норма <b>единовременной реализации</b></h2>
+    <h3><strong>Введите <span>наименование</span> лекарственного средства:</strong></h3>
 
   <input type="text" id="query" ng-model="query"/>
   <ul>
     <li ng-repeat="ls in nerLS | filter:query | orderBy: orderList" class="ls">
-      Название: {{ls.name}}<br/>
+      <strong>{{ls.name}}</strong><br/>
       Тип ЛС: {{ls.type}}<br/>
-      <div class="right top">{{ls.dose}}</div>
+      <div class="right top"><strong>{{ls.dose}}</strong></div>
     </li>
     <li ng-repeat="ls in nerPSY | filter:query | orderBy: orderList" class="psy">
-      Название: {{ls.name}}<br/>
+      <strong>{{ls.name}}</strong><br/>
       Тип ЛС: {{ls.type}}<br/>
-      <div class="right top">{{ls.dose}}</div>
+      <div class="right top"><strong>{{ls.dose}}</strong></div>
     </li>
   </ul>
 
