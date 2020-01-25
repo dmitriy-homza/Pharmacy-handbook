@@ -52,6 +52,7 @@ font-family: "Source Sans Pro", sans-serif;
   float: right;
   position: relative;
   top: 6px;
+  font-size: 17px;
 }
 
 .top {
@@ -1244,4 +1245,18 @@ label, .length__title, .field-title {
     height: 75px;
     font-size: 30px;
   }
+
+  .card-ner {
+    height: auto;
+
+  }
+
+  .card-ner li {
+    font-size: 10px;
+  }
+
+  #ner {
+    max-height: unset;
+  }
+
 }
