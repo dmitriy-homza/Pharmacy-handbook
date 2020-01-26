@@ -166,3 +166,28 @@ function applyFill(slider) {
 	slider.style.background = bg;
 	sliderValue.setAttribute("data-length", slider.value);
 }
+
+
+//Показать нд
+let addClass = function (nd) {
+nd.addEventListener('mouseover', function () {
+  nd.classList.add('is-active')
+  console.log('dsad')
+});
+}
+
+let removeClass = function (ndr) {
+ndr.addEventListener('mouseout', function () {
+  ndr.classList.remove('is-active')
+  console.log('dsad')
+});
+}
+
+let ndSection = document.querySelector('#d');
+let nd = ndSection.children;
+for (var i = 0; i < nd.length; i++) {
+  addClass(nd[i]);
+}
+for (var i = 0; i < nd.length; i++) {
+  removeClass(nd[i]);
+}

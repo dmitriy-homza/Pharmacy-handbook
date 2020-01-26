@@ -817,7 +817,7 @@ text-align: right;
   height: auto !important;
 }
 
-.nd:nth-of-type(n+2) {
+.nd:nth-of-type(n+3) {
     margin-top: 20px;
 }
 
@@ -1301,7 +1301,12 @@ text-transform: uppercase;
   }
 
   .pulv h3 {
+  }
 
+  .nd {
+    flex-direction: column;
+    margin: 0px !important;
+    margin-top: 10px !important;
   }
 
 }
