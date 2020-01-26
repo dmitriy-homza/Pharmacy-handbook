@@ -1200,7 +1200,7 @@ text-transform: uppercase;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 
   .form-buttons {
@@ -1319,5 +1319,8 @@ font-size: 1.5em;
   .pulv h3 {
   }
 
+  .nd h2 {
+    font-size: 0.8em;
+  }
 
 }

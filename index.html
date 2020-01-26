@@ -151,7 +151,7 @@
       <h2>норма <span>единовременной реализации</span></h2>
       <h3>Введите <span>наименование</span> лекарственного средства:</h3>
 
-    <input type="text" id="query" ng-model="query"/>
+    <input type="text" autocomplete="off" id="query" ng-model="query"/>
     <ul>
       <li ng-repeat="ls in nerLS | filter:query | orderBy: orderList" class="ls">
         <div class="fixed-font"><strong>{{ls.name}}</strong><br/>
