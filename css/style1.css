@@ -48,16 +48,6 @@ font-family: "Source Sans Pro", sans-serif;
 .hide {
   display: none;
 }
-.right {
-  float: right;
-  position: relative;
-  top: 6px;
-  font-size: 17px;
-}
-
-.top {
-  margin-top: -30px;
-}
 
 #ner {
   width: 100%;
@@ -265,6 +255,19 @@ transform: scale(0.99);
 
 
 @media only screen and (min-width: 1366px) {
+
+  .right {
+    float: right;
+    position: relative;
+    top: 6px;
+    font-size: 17px;
+  }
+
+  .top {
+    margin-top: -30px;
+  }
+
+
 
   .pulv form {
     display: flex;
@@ -1273,7 +1276,7 @@ text-transform: uppercase;
 
   }
 
-  .card-ner li {
+  .card-ner li {display: flex;
   }
 
   #ner {
@@ -1297,7 +1300,12 @@ text-transform: uppercase;
   }
 
   .top {
-    margin-top: -40px;
+    margin-left: auto;
+width: auto;
+min-width: 120px;
+padding: 5px;
+font-size: 1.5em;
+}
   }
 
   .pulv h3 {
