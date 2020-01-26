@@ -163,6 +163,11 @@
         Тип ЛС: {{ls.type}}<br/></div>
         <div class="right top"><strong>{{ls.dose}}</strong></div>
       </li>
+      <li ng-repeat="ls in nerDRUGS | filter:query | orderBy: orderList" class="drugs">
+        <div class="fixed-font"><strong>{{ls.name}}</strong><br/>
+        Тип ЛС: {{ls.type}}<br/></div>
+        <div class="right top"><strong>{{ls.dose}}</strong></div>
+      </li>
     </ul>
 
   </div>

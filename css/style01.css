@@ -18,7 +18,9 @@ font-family: "Source Sans Pro", sans-serif;
 
 /* Стили поиска по НЕР*/
 
-
+.card-ner .drugs {
+  background-image: linear-gradient( 90deg, #ff2e2e63 10px, #EEE 10px, #EEE 11px, transparent 11px);
+}
 
 .card-ner {
   height: auto;
@@ -66,7 +68,7 @@ font-family: "Source Sans Pro", sans-serif;
 .card-ner li {
     list-style: none;
     background-color: rgb(255, 255, 255);
-    background-image: linear-gradient( 90deg, #FFD32E 10px, #EEE 10px, #EEE 11px, transparent 11px);
+        background-image: linear-gradient( 90deg, #ffd32e73 10px, #EEE 10px, #EEE 11px, transparent 11px);
     padding: 10px 15px 10px 25px;
     border: 1px solid #399773;
     box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
@@ -153,7 +155,7 @@ header {
 
 header:hover {
   width: 250px;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 
@@ -219,15 +221,18 @@ transform: scale(0.99);
   from {
     opacity: 0;
     height: 0em;
+    padding: 0px 0px;
   }
 
 50% {
   opacity: 0;
+  padding: 0px 0px;
 }
 
   to {
     opacity: 1;
     height: 2em;
+
   }
 }
 
@@ -367,6 +372,11 @@ transform: scale(0.99);
 .ab-card .advise {
   animation-name: ab-anim;
   animation-duration: 0.3s;
+  padding: 0px 0px;
+}
+
+.ab-answer {
+  margin-top: 0px;
 }
 
 
@@ -759,6 +769,7 @@ form > div {
 
 
   to {
+
     opacity: 1;
     height: 2em;
   }
@@ -877,7 +888,7 @@ h4 span {
   perspective: 1500px;
   min-width: 390px;
   flex-grow: 1;
-  max-width: 610px;
+  max-width: 605px;
 }
 .card-flip .content {
   width: 100%;
