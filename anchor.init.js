@@ -1,5 +1,5 @@
 $("document").ready(function(){
     $('a[href*=#]').anchor({
-        transitionDuration : 1200
+        transitionDuration : 800
     });
 });
