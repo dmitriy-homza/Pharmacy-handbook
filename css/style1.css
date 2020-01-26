@@ -856,6 +856,7 @@ h4 span {
 
 .is-active h2 {
   display: flex;
+  font-size: 1em;
 }
 
 /* Новые карточки стили */
@@ -1199,7 +1200,7 @@ text-transform: uppercase;
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
   .form-buttons {
