@@ -1319,6 +1319,10 @@ font-size: 1.5em;
   .pulv h3 {
   }
 
+  body {
+    font-size: unset;
+  }
+
   .nd h2 {
     font-size: 0.8em;
   }
