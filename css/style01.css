@@ -1153,6 +1153,11 @@ h4 span {
    padding: 0;
   }
 
+.prescription-form {
+    height: calc(100% - 1.5em);
+    display: flex;
+    flex-direction: column;
+}
     .nd {
       flex-direction: column;
       margin: 0px !important;
@@ -1301,7 +1306,7 @@ text-transform: uppercase;
   margin-left: 40px;
   }
 
-  .plus-height {
+  .plus-height:nth-of-type(2) {
     height: 548px;
     animation-name: plusheight;
     animation-duration: 0.4s;
