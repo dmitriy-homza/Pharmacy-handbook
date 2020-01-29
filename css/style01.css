@@ -893,7 +893,7 @@ h4 {
   text-transform: uppercase;
   font-weight: 300;
   color: #8b9494;
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   padding-top: 5px;
 }
@@ -1253,7 +1253,7 @@ text-transform: uppercase;
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
   .form-buttons {
@@ -1349,7 +1349,7 @@ text-transform: uppercase;
   }
 
   .fixed-font {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   #ner h2 span {
@@ -1365,7 +1365,7 @@ text-transform: uppercase;
 width: auto;
 min-width: 120px;
     padding: 5px 0px 5px 10px;
-font-size: 1.5em;
+font-size: 1em;
 }
   }
 
