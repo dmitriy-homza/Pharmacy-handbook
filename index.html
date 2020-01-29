@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/style01.css">
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" charset="utf-8"></script>
     <link rel="shortcut icon" href="img/logotype.png" type="image/x-icon">
   </head>
@@ -34,7 +33,7 @@
              <input type="checkbox" id="card1" class="more" aria-hidden="true">
              <div class="content">
                  <div class="front">
-                     <div class="inner">
+                     <div class="inner card">
                        <div id="prescription">
                             <h2>расчет <span>рецептурных номеров</span></h2>
                             <form class="prescription-form" method="post">
@@ -61,7 +60,7 @@
                      </div>
                  </div>
                  <div class="back">
-                     <div class="inner">
+                     <div class="inner card">
                        <div class="recipe-description">
                        <h3>За <span>первые 20</span> и менее порошков начисляется <span>1 рецептурный номер</span>. <br><br>За каждые <span>последующие 20 и менее</span> порошков - <span>0.5 рецептурного номера</span>.</h3>
                        </div>
@@ -146,7 +145,7 @@
 
 <section id="b">
 
-  <div class="card-ner">
+  <div class="card-ner card">
     <div id="ner" ng-app="ner-search" ng-controller="NotebookListCtrl">
       <h2>норма <span>единовременной реализации</span></h2>
       <h3>Введите <span>наименование</span> лекарственного средства:</h3>
