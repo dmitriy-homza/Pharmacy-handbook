@@ -20,7 +20,6 @@ var prescriptionNumber = function(pulvNumber) {
 
   else if (pulvNumber<=0 ) {
     number = -1;
-    console.log(number)
   }
 
 let rPulvNumber = pulvNumber%10;
@@ -34,7 +33,6 @@ else if (pulvNumber<20 && pulvNumber>=10) {
 }
 else if (rPulvNumber==1) {
   pulvText = ' порошок ';
-  console.log(rPulvNumber)
 }
 else  {
   pulvText = ' порошков ';
@@ -85,7 +83,6 @@ form.addEventListener('submit', function (evt) {
   abFront.classList.remove('plus-height');
   abBack.classList.remove('plus-height');
   removeAnswer();
-  console.log('Схватил');
   var input = pulvNumber.value;
   prescriptionNumber(input);
 });
@@ -172,14 +169,12 @@ function applyFill(slider) {
 let addClass = function (nd) {
 nd.addEventListener('mouseover', function () {
   nd.classList.add('is-active')
-  console.log('dsad')
 });
 }
 
 let removeClass = function (ndr) {
 ndr.addEventListener('mouseout', function () {
   ndr.classList.remove('is-active')
-  console.log('dsad')
 });
 }
 
