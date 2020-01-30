@@ -618,7 +618,7 @@ transform: scale(0.99);
 
 @keyframes nd-anim   {
   from {
-    height: auto;
+    height: 0;
   }
 
   to {
