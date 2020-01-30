@@ -5,14 +5,14 @@
  * @dependencies	jQuery v1.5.0 http://jquery.com
  * @author			Cornel Boppart <cornel@bopp-art.com>
  * @copyright		Author
- 
+
  * @version		1.0.5 (02/11/2014)
  */
 
 ;(function ($) {
-	
+
 	window.anchor = {
-		
+
 		/**
 		 * Default settings
 		 *
@@ -70,7 +70,7 @@
 				return $section.offset().top;
 			}
 		},
-		
+
 		/**
 		 * Jumps to the specific position
 		 *
