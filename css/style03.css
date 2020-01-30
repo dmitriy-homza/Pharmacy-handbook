@@ -1507,6 +1507,7 @@ text-transform: uppercase;
 
   .items p {
     padding-left: 5px;
+    font-size: 23px;
   }
 
   main {
