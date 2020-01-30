@@ -602,8 +602,6 @@ transform: scale(0.99);
 @keyframes pulv-anim {
   from {
     opacity: 0;
-    height: 0px;
-    padding: 0px 0px;
   }
 
 50% {
@@ -612,7 +610,7 @@ transform: scale(0.99);
 
   to {
     opacity: 1;
-    padding-bottom: 10px;
+
   }
 }
 
@@ -1006,7 +1004,7 @@ cursor: pointer;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  margin: 35px 0 0px 0;
+  margin: 45px 0 0px 0;
 }
 .range__slider::before, .range__slider::after {
   position: absolute;
