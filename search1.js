@@ -119,3 +119,54 @@ nerSearch.controller('NotebookListCtrl', function($scope) {
   ];
   $scope.orderList = "name";
 });
+
+
+
+
+//Табсы
+
+// tabs
+
+var tabLinks = document.querySelectorAll(".tablinks");
+var tabContent = document.querySelectorAll(".tabcontent");
+
+
+tabLinks.forEach(function(el) {
+   el.addEventListener("click", openTabs);
+});
+
+
+function openTabs(el) {
+   var btnTarget = el.currentTarget;
+   var country = btnTarget.dataset.country;
+
+   tabContent.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   tabLinks.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   document.querySelector("#" + country).classList.add("active");
+
+   btnTarget.classList.add("active");
+}
+
+
+//Плавный скроллинг
+$(document).ready(function(){
+	$(".items").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 400);
+	});
+});
